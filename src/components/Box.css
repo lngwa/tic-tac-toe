@@ -1,0 +1,13 @@
+.box{
+	cursor:pointer;
+    text-align: center;
+    font-size:4em;
+    padding: 1em, auto;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.empty{
+	opacity: 0;
+}
