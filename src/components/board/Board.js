@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Board.css";
-import Box from "./Box";
+import Box from "../box/Box";
 
 const Board = ({board, onClickHandle}) => {
 	const boxes = board.map((player, index) => {

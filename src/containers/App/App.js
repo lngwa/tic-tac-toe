@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Button from "./components/Button";
-import Board from "./components/Board";
-import Player from "./components/Player";
+import Button from "../../components/button/Button";
+import Board from "../../components/board/Board";
+import Player from "../../components/player/Player";
 import "./App.css";
-import "./components/Player.css";
+import "../../components/player/Player.css";
 import Particles from 'react-particles-js';
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
 			winner: null,
 			resetBtn: false,
 			tie:false,
-			moves: Array()
+			moves: []
 		};
 	}
 
@@ -92,7 +92,7 @@ class App extends Component {
 			winner: null,
 			resetBtn: false,
 			tie:false,
-			moves: Array()
+			moves: []
 		});
 	};
 
@@ -114,7 +114,7 @@ class App extends Component {
 	};
 
 	backToGame = () => {		
-		this.setState({ tie: false, moves: Array() });
+		this.setState({ tie: false, moves: [] });
 	};
 
 	getGame = () => {
@@ -250,7 +250,7 @@ class App extends Component {
 		
 		return <div>
 		<Particles className="particles"
-    params={this.partConfig} />
+    params={partConfig} />
 		{this.getGame()}
 		</div>;
 	}
